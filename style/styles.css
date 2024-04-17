@@ -1,0 +1,32 @@
+#title1 {
+  color: blue;
+  font-style: italic;
+  text-decoration: underline;
+  text-align: center;
+  background-color: aliceblue;
+
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+body {
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+}
+
+.paragraph {
+  font-size: 120%;
+  font-weight: bolder;
+  font-style: normal;
+  color: blueviolet;
+  background-color: beige;
+  padding: 10px;
+}
+
+div p {
+  font-style: normal;
+  height: 8px;
+  text-align: left;
+}
