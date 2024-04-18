@@ -1,0 +1,50 @@
+span,
+div {
+  background: yellow;
+  border: 1px solid red;
+}
+
+.top {
+  position: relative;
+  top: 5px;
+  z-index: 1;
+}
+
+.right {
+  position: relative;
+  right: 5px;
+}
+
+.bottom {
+  position: relative;
+  bottom: 5px;
+}
+
+.left {
+  position: relative;
+  left: 5px;
+}
+
+#fixed {
+  background: yellow;
+  position: fixed;
+  right: 0;
+}
+
+#absolute {
+  background: yellow;
+  position: absolute;
+  right: 100;
+}
+
+#parent {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background: skyblue;
+}
+
+#child {
+  position: absolute;
+  right: 0;
+}
