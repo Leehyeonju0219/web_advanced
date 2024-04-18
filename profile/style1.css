@@ -67,7 +67,7 @@ section {
   margin: 0px 190px;
 }
 
-.introduce {
+#introduce {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -75,13 +75,13 @@ section {
   margin-top: 120px;
 }
 
-.introduce h2 span {
+#introduce h2 span {
   background: linear-gradient(120deg, rgb(241, 32, 102), rgb(106, 0, 255));
   background-clip: text;
   color: transparent;
 }
 
-.introduce #image img {
+#introduce .image img {
   width: 300px;
   height: 300px;
   border: 9px solid transparent;
@@ -93,7 +93,7 @@ section {
 }
 
 /* Tech Stack Section Styles */
-.tech-stack {
+#tech-stack {
   text-align: center;
   padding: 50px 0;
   margin: 110px 220px 0px 220px;
@@ -131,19 +131,19 @@ section {
 }
 
 /* Projects Section Styles */
-.projects {
+#projects {
   padding: 50px;
   text-align: center;
   margin-top: 50px;
 }
 
-.projects h2 {
+#projects h2 {
   font-size: 28px;
   color: #343a40;
   margin-bottom: 1rem;
 }
 
-.projects p {
+#projects p {
   font-size: 20px;
   color: #6c757d;
   margin-top: 20px;
@@ -236,7 +236,7 @@ section {
 }
 
 /* Footer Styles */
-.footer {
+#footer {
   padding: 20px 0;
   font-family: Arial, sans-serif;
   margin-top: 100px;
@@ -260,7 +260,7 @@ section {
   gap: 36px;
 }
 
-#footer-contact {
+.footer-contact {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
