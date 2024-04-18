@@ -54,10 +54,13 @@ nav .items {
 }
 
 .items .sns-images {
-  width: 24px;
   display: flex;
   justify-content: space-between;
   gap: 20px;
+}
+
+.items .sns-images img {
+  width: 24px;
 }
 
 section {
