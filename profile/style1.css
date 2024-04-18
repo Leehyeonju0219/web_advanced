@@ -27,6 +27,8 @@ nav .items {
   justify-content: space-between;
   gap: 36px;
   align-items: center;
+  list-style: none;
+  padding: 0;
 }
 
 .items .menu {
@@ -34,15 +36,6 @@ nav .items {
   justify-content: space-between;
   gap: 36px;
   text-align: center;
-}
-
-.items .menu a:hover {
-  color: #ff006f; /* 호버시 링크 색상 변경 */
-}
-
-.items {
-  list-style: none;
-  padding: 0;
 }
 
 .items li {
@@ -56,7 +49,12 @@ nav .items {
   transition: color 0.3s;
 }
 
-.items #sns-images {
+.items .menu a:hover {
+  color: #ff006f; /* 호버시 링크 색상 변경 */
+}
+
+.items .sns-images {
+  width: 24px;
   display: flex;
   justify-content: space-between;
   gap: 20px;
@@ -197,16 +195,34 @@ section {
   height: 30px;
 }
 
+.project-links {
+  display: flex;
+  justify-content: center;
+}
+
+.project-links .notion,
+.project-links .github {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .project-links a {
   text-decoration: none;
   color: black;
-  padding: 0.5rem 1rem;
-  display: inline-block;
-  margin: 1rem;
+  padding: 0.5rem 0.5rem;
+  margin: 0.5rem;
 }
 
 .project-links a:hover {
   color: #ff006f; /* 호버시 링크 색상 변경 */
+}
+
+.project-links .notion img,
+.project-links .github img {
+  width: 20px;
+  height: 20px;
 }
 
 /* 반응형 디자인 */
