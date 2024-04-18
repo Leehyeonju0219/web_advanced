@@ -4,124 +4,155 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>현주의 포트폴리오</title>
+    <link rel="stylesheet" href="style1.css" />
   </head>
   <body>
     <!-- header -->
     <header>
-      <h1><img height="59" src="포트폴리오 로고.png" /></h1>
       <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Tech Stack</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><img src="깃허브.png" /></li>
-          <li><img src="트위터.png" /></li>
-          <li><img src="인스타.png" /></li>
-        </ul>
+        <div class="logo">
+          <div>
+            <img height="59" src="포트폴리오 로고.png" />
+          </div>
+        </div>
+        <div class="items">
+          <div class="sns-images">
+            <a href="https://github.com/Leehyeonju0219"
+              ><img src="깃허브.png" alt="GitHub"
+            /></a>
+            <a href="https://twitter.com"
+              ><img src="트위터.png" alt="Twitter"
+            /></a>
+            <a href="https://www.instagram.com/melattilee"
+              ><img src="인스타.png" alt="Instagram"
+            /></a>
+          </div>
+          <div id="menu">
+            <div>Home</div>
+            <div>About</div>
+            <div>Tech Stack</div>
+            <div>Projects</div>
+            <div>Contact</div>
+          </div>
+        </div>
       </nav>
     </header>
-    <hr />
 
-    <section name="introduce">
-      <div>
-        <h2>
-          Hi👋, <br />
-          My name is <br />
-          Hyeonju Lee <br />
-          I build things for web
-        </h2>
+    <section>
+      <div class="introduce">
+        <div id="text">
+          <h2>
+            Hi👋, <br />
+            My name is <br />
+            <span>Hyeonju Lee</span> <br />
+            I'm Backend Developer👩‍💻
+          </h2>
+        </div>
+        <div id="image">
+          <img width="349" src="나.png" />
+        </div>
       </div>
-      <img width="349" src="나.png" />
     </section>
 
-    <section name="tech" style="text-align: center">
-      <h2>My Tech Stack</h2>
-      <p>Technologies I've been working with recently</p>
-      <table>
-        <tr>
-          <td><img src="html.png" /></td>
-          <td><img src="css.png" /></td>
-          <td><img src="js.png" /></td>
-          <td><img src="react.png" /></td>
-          <td><img src="git.png" /></td>
-          <td><img src="vsc.png" /></td>
-        </tr>
-        <tr>
-          <td><img src="github.png" /></td>
-        </tr>
-      </table>
+    <section class="tech-stack">
+      <div class="tech-introduce">
+        <h2>My Tech Stack</h2>
+        <p>Technologies I've been working with recently</p>
+      </div>
+      <div class="tech-images">
+        <img src="html.png" alt="HTML5" />
+        <img src="css.png" alt="CSS3" />
+        <img src="js.png" alt="JavaScript" />
+        <img src="react.png" alt="React" />
+        <img src="git.png" alt="Git" />
+        <img src="vsc.png" alt="Visual Studio Code" />
+        <img src="github.png" alt="Github" />
+        <img src="amazonaws.svg" alt="AWS" />
+        <img src="mysql.svg" alt="MySQL" />
+        <img src="springboot.svg" alt="Springboot" />
+        <img src="java.svg" alt="Java" />
+        <img src="openai.svg" alt="OpenAI" />
+        <img src="python.svg" alt="Python" />
+        <img src="linux.svg" alt="Linux" />
+        <img src="redmine.svg" alt="Redmine" />
+        <img src="flutter.svg" alt="Flutter" />
+        <img src="dart.svg" alt="Dart" />
+      </div>
     </section>
 
-    <section style="text-align: center">
+    <!-- Projects Section -->
+    <section class="projects">
       <h2>Projects</h2>
       <p>Things I've built so far</p>
-      <div>
-        <table>
-          <tr>
-            <td>
-              <div>
-                <h3>Project1</h3>
-                <p>Project Description</p>
-              </div>
-            </td>
-            <td>
-              <div>
-                <h3>Project2</h3>
-                <p>Project Description</p>
-              </div>
-            </td>
-            <td>
-              <div>
-                <h3>Project3</h3>
-                <p>Project Description</p>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div>
-                <h3>Project4</h3>
-                <p>Project Description</p>
-              </div>
-            </td>
-            <td>
-              <div>
-                <h3>Project5</h3>
-                <p>Project Description</p>
-              </div>
-            </td>
-            <td>
-              <div>
-                <h3>Project6</h3>
-                <p>Project Description</p>
-              </div>
-            </td>
-          </tr>
-        </table>
+      <div class="project-grid">
+        <!-- 첫 번째 프로젝트 카드 -->
+        <div class="project-card">
+          <img src="Modi logo.png" alt="Project Title 1" />
+          <h3>Modi 앱 프로젝트</h3>
+          <p>
+            스터디를 만들거나 가입할 수 있게 하고 스터디 관리를 편리하게
+            도와주는 앱 서비스입니다.
+          </p>
+          <div class="project-tech-stack">Java, Springboot, MySQL</div>
+          <div class="project-links">
+            <a href="live-preview-url">Live Preview</a>
+            <a href="source-code-url">View Code</a>
+          </div>
+        </div>
+        <!-- 다른 프로젝트 카드도 이와 유사하게 추가 -->
+        <div class="project-card">
+          <img src="마음일기 로고.png" alt="Project Title 1" />
+          <h3>마음일기 앱 프로젝트</h3>
+          <p>
+            매일을 쉽게 기록하고 속마음을 털어놓을 수 있는 힐링 일기 앱
+            서비스입니다.
+          </p>
+          <div class="project-tech-stack">
+            Java, Springboot, MySQL, AWS, Dart, Flutter
+          </div>
+          <div class="project-links">
+            <a href="live-preview-url">Live Preview</a>
+            <a href="source-code-url">View Code</a>
+          </div>
+        </div>
+        <!-- ... -->
       </div>
     </section>
 
-    <footer>
-      <div>
-        <h1><img height="59" src="포트폴리오 로고.png" /></h1>
-        <p>+82 12345 67890</p>
-        <p>wkdal3512@dankook.ac.kr</p>
-        <img src="깃허브.png" />
-        <img src="트위터.png" />
-        <img src="인스타.png" />
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div id="footer-logo-image">
+          <img class="footer-logo" src="포트폴리오 로고.png" alt="Logo" />
+        </div>
+        <div id="footer-contact">
+          <div class="social-icons">
+            <a href="https://github.com/Leehyeonju0219"
+              ><img src="깃허브.png" alt="GitHub"
+            /></a>
+            <a href="https://twitter.com"
+              ><img src="트위터.png" alt="Twitter"
+            /></a>
+            <a href="https://www.instagram.com/melattilee"
+              ><img src="인스타.png" alt="Instagram"
+            /></a>
+          </div>
+          <div class="contact-info">
+            <p>+82 12345 67890</p>
+            <p>wkdal3512@naver.com</p>
+          </div>
+        </div>
       </div>
-      <hr />
-      <div>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Technologies</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact</a></li>
+      <hr class="footer-divider" />
+      <div class="footer-bottom">
+        <ul class="footer-nav">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#technologies">Technologies</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-        <p>Designed and built by Pavan MG with Love & Coffee</p>
+        <p class="credit">Designed and built by Pavan MG with Love & Coffee</p>
       </div>
     </footer>
   </body>
