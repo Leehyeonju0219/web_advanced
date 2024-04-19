@@ -1,0 +1,296 @@
+body {
+  height: 100%;
+  font-family: "Pretendard Variable", Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+/* nav */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 31px 19px 0px 20px;
+}
+
+nav .logo {
+  display: flex;
+}
+
+.menu2 {
+  margin: 10px 19px 0px 20px;
+  padding: 0;
+}
+
+.menu2 ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu2 ul li {
+  display: inline-block;
+  padding: 5px 10px;
+}
+
+.menu2 ul li a {
+  color: rgb(102, 102, 102);
+  font-weight: 500;
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.menu2 a:hover {
+  color: #ff006f; /* 호버시 링크 색상 변경 */
+}
+
+.menu1 {
+  display: none;
+}
+
+nav .sns-images {
+  display: flex;
+  justify-content: space-between;
+  gap: 21.88px;
+}
+
+nav .sns-images img {
+  width: 24px;
+}
+
+/* header */
+header #introduce {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  text-align: center;
+}
+
+header #introduce .image img {
+  width: 200px;
+  border: 10px solid transparent;
+  border-radius: 100%;
+  background-image: linear-gradient(#fff, #fff),
+    linear-gradient(120deg, rgb(140, 0, 255), rgb(255, 174, 0));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  margin-top: 67px;
+}
+
+header #introduce h2 {
+  font-weight: 700;
+  font-size: 28px;
+  color: rgb(66, 68, 110);
+}
+
+header #introduce h2 span {
+  background: linear-gradient(120deg, rgb(241, 32, 102), rgb(106, 0, 255));
+  background-clip: text;
+  color: transparent;
+  margin-top: 10px;
+}
+
+/* tech-stack */
+#tech-stack {
+  text-align: center;
+  margin-top: 160px;
+}
+
+.tech-introduce h2 {
+  color: rgb(66, 68, 110);
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.tech-introduce p {
+  font-size: 14px;
+  color: #6c757d;
+  margin-top: 8px;
+}
+
+.tech-images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px 10px; /* 기술 이미지들 사이의 간격 */
+  margin-top: 29px;
+}
+
+.tech-images img {
+  width: 80px; /* 아이콘 크기 조정이 필요할 수 있음 */
+  height: auto; /* 이미지의 비율을 유지 */
+  transition: transform 0.3s; /* 마우스 오버 효과를 부드럽게 */
+  padding: 5px;
+}
+
+.tech-images img:hover {
+  transform: scale(1.1); /* 마우스 오버 시 아이콘 확대 */
+}
+
+/* projects */
+#projects {
+  text-align: center;
+  margin-top: 165.2px;
+}
+
+#projects h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: rgb(66, 68, 110);
+}
+
+#projects #project-description {
+  font-size: 14px;
+  color: #6c757d;
+  margin-top: 20px;
+}
+
+.project-grid {
+  display: grid;
+  gap: 30px; /* 그리드 간격 */
+  padding: 0px 25px 0px 25px;
+}
+
+.project-card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+  transition: transform 0.3s; /* 부드러운 변형 효과 */
+  margin-top: 24px;
+}
+
+.project-card:hover {
+  transform: translateY(-10px); /* 호버 시 카드 올라가는 효과 */
+}
+
+.project-card img {
+  width: 100%;
+  height: 290px;
+  object-fit: cover; /* 이미지가 카드를 꽉 채우도록 */
+}
+
+.project-card h3 {
+  font-size: 28px;
+  color: #343a40;
+  margin-top: 30px;
+}
+
+.project-card p {
+  color: #6c757d;
+  margin: 24px 30px 24px 30px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.project-tech-stack {
+  background-color: #e9ecef;
+  color: #495057;
+  padding: 0.5rem 1rem;
+  font-size: 14px;
+  height: 30px;
+}
+
+.project-links {
+  display: flex;
+  justify-content: center;
+}
+
+.project-links a {
+  text-decoration: none;
+  color: black;
+  padding: 0.5rem 0.5rem;
+  margin: 0.5rem;
+}
+
+.project-links a:hover {
+  color: #ff006f; /* 호버시 링크 색상 변경 */
+}
+
+.project-links .notion,
+.project-links .github {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-links .notion img,
+.project-links .github img {
+  width: 20px;
+  height: 20px;
+}
+
+/* footer */
+#footer {
+  font-family: Arial, sans-serif;
+  margin: 285px 19px 0px 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-logo {
+  max-height: 59px; /* 로고 이미지의 최대 높이 */
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
+}
+
+.contact-info a {
+  color: rgb(102, 102, 102);
+}
+
+.contact-info #phone-number {
+  display: none;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 20px;
+}
+
+.footer-contact .social-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-info a,
+.social-icons a {
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.social-icons img {
+  width: 24px; /* 소셜 미디어 아이콘 크기 */
+}
+
+.footer-divider {
+  margin: 24px 0px 10px 0px;
+}
+
+.footer-bottom .footer-nav {
+  display: none;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.credit {
+  color: #6c757d;
+  line-height: 1.5;
+}
