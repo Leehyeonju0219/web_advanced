@@ -4,39 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>현주의 포트폴리오</title>
-    <link rel="stylesheet" href="style1.css" />
+    <link rel="stylesheet" media="(max-width: 768px)" href="style2.css" />
+    <link rel="stylesheet" media="(min-width: 768px)" href="style1.css" />
   </head>
   <body>
     <!-- nav -->
     <nav>
       <div class="logo">
-        <div>
-          <img height="59" src="포트폴리오 로고.png" />
-        </div>
+        <img height="59" src="포트폴리오 로고.png" />
       </div>
-      <div class="items">
-        <div class="sns-images">
-          <a href="https://github.com/Leehyeonju0219" target="_blank"
-            ><img src="깃허브.png" alt="GitHub"
-          /></a>
-          <a href="https://vvs010.tistory.com/" target="_blank"
-            ><img src="tistory.svg" alt="Tstory"
-          /></a>
-          <a href="https://www.instagram.com/melattilee" target="_blank"
-            ><img src="insta.svg" alt="Instagram"
-          /></a>
-        </div>
-        <div>
-          <ul class="menu">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#introduce">About</a></li>
-            <li><a href="#tech-stack">Technologies</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#footer">Contact</a></li>
-          </ul>
-        </div>
+      <div class="menu1">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#introduce">About</a></li>
+          <li><a href="#tech-stack">Tech Stack</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#footer">Contact</a></li>
+        </ul>
+      </div>
+      <div class="sns-images">
+        <a href="https://github.com/Leehyeonju0219" target="_blank"
+          ><img src="깃허브.png" alt="GitHub"
+        /></a>
+        <a href="https://vvs010.tistory.com/" target="_blank"
+          ><img src="tistory.svg" alt="Tstory"
+        /></a>
+        <a href="https://www.instagram.com/melattilee" target="_blank"
+          ><img src="insta.svg" alt="Instagram"
+        /></a>
       </div>
     </nav>
+
+    <div class="menu2">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#introduce">About</a></li>
+        <li><a href="#tech-stack">Tech Stack</a></li>
+        <br />
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#footer">Contact</a></li>
+      </ul>
+    </div>
 
     <!-- header -->
     <header>
@@ -84,7 +92,7 @@
     <!-- Projects Section -->
     <section id="projects">
       <h2>Projects</h2>
-      <p>Things I've built so far</p>
+      <p id="project-description">Things I've built so far</p>
       <div class="project-grid">
         <!-- 첫 번째 프로젝트 카드 -->
         <div class="project-card">
@@ -151,7 +159,9 @@
             /></a>
           </div>
           <div class="contact-info">
-            <a href="#">+82 12345 67890</a>
+            <div id="phone-number">
+              <a href="#">+82 12345 67890</a>
+            </div>
             <a href="mailto:wkdal3512@naver.com?subject=문의합니다"
               >wkdal3512@naver.com</a
             >
@@ -160,14 +170,18 @@
       </div>
       <hr class="footer-divider" />
       <div class="footer-bottom">
-        <ul class="footer-nav">
-          <li><a href="#">Home</a></li>
-          <li><a href="#introduce">About</a></li>
-          <li><a href="#tech-stack">Technologies</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#footer">Contact</a></li>
-        </ul>
-        <p class="credit">Designed and built by Pavan MG with Love & Coffee</p>
+        <div>
+          <ul class="footer-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#introduce">About</a></li>
+            <li><a href="#tech-stack">Tech Stack</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#footer">Contact</a></li>
+          </ul>
+        </div>
+        <p class="credit">
+          Designed and built <span><br /></span> by Pavan MG with Love & Coffee
+        </p>
       </div>
     </footer>
   </body>
