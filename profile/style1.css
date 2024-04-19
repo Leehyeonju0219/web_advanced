@@ -1,16 +1,19 @@
 body {
-  max-width: 1500px;
+  max-width: 1600px;
   margin: 0 auto;
-  padding: 0px 20px;
   height: 100%;
-  font-family: "Arial", sans-serif;
+  font-family: "Pretendard Variable", Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 header,
 nav {
-  margin: 25px 190px 15px 190px;
+  margin: 40px 186px 0px 186px;
 }
 
+/* nav */
 nav {
   display: flex;
   justify-content: space-between;
@@ -18,50 +21,53 @@ nav {
 
 nav .logo {
   display: flex;
-  justify-content: space-between;
-}
-
-nav .items {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  gap: 36px;
   align-items: center;
-  list-style: none;
-  padding: 0;
 }
 
-.items .menu {
+nav .menu1 {
   display: flex;
-  justify-content: space-between;
-  gap: 36px;
   text-align: center;
 }
 
-.items li {
+nav .menu1 ul {
+  padding: 0;
+  list-style: none;
+}
+
+nav .menu1 ul li {
   display: inline;
-  margin: 0 10px;
+  padding: 30px;
+  align-items: center;
 }
 
-.items a {
-  color: black;
-  text-decoration: none;
+nav .menu1 ul li a {
+  color: rgb(102, 102, 102);
+  font-weight: 500;
   transition: color 0.3s;
+  text-decoration: none;
+  font-size: 20px;
 }
 
-.items .menu a:hover {
+nav .menu1 a:hover {
   color: #ff006f; /* 호버시 링크 색상 변경 */
 }
 
-.items .sns-images {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
+.menu2 {
+  display: none;
 }
 
-.items .sns-images img {
+nav .sns-images {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 21.88px;
+}
+
+nav .sns-images img {
   width: 24px;
 }
+
+/* header */
 
 section {
   margin: 0px 190px;
@@ -75,6 +81,12 @@ section {
   margin-top: 120px;
 }
 
+#introduce h2 {
+  font-weight: 700;
+  font-size: 48px;
+  color: rgb(66, 68, 110);
+}
+
 #introduce h2 span {
   background: linear-gradient(120deg, rgb(241, 32, 102), rgb(106, 0, 255));
   background-clip: text;
@@ -84,7 +96,7 @@ section {
 #introduce .image img {
   width: 300px;
   height: 300px;
-  border: 9px solid transparent;
+  border: 10px solid transparent;
   border-radius: 100%;
   background-image: linear-gradient(#fff, #fff),
     linear-gradient(120deg, rgb(140, 0, 255), rgb(255, 174, 0));
@@ -100,8 +112,8 @@ section {
 }
 
 .tech-introduce h2 {
-  color: #343a40;
-  font-size: 28px;
+  color: rgb(66, 68, 110);
+  font-size: 30px;
   margin-bottom: 10px;
 }
 
@@ -138,9 +150,9 @@ section {
 }
 
 #projects h2 {
-  font-size: 28px;
-  color: #343a40;
-  margin-bottom: 1rem;
+  font-size: 30px;
+  color: rgb(66, 68, 110);
+  margin-bottom: 10px;
 }
 
 #projects p {
@@ -188,6 +200,7 @@ section {
   margin: 0 1rem 1rem;
   height: 100px;
   font-size: 1.1rem;
+  line-height: 1.5;
 }
 
 .project-tech-stack {
@@ -305,6 +318,10 @@ section {
 
 .footer-nav a:hover {
   color: #ff006f; /* 호버시 링크 색상 변경 */
+}
+
+.footer-bottom .credit span {
+  display: none;
 }
 
 .credit {
