@@ -52,5 +52,3 @@ function parseSise(newsElem) {
     amount,
   };
 }
-
-// console.log(trTag);
